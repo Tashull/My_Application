@@ -7,18 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ぷらもば"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
-
     <Button
         android:id="@+id/start"
         android:layout_width="300dp"
@@ -48,29 +36,26 @@
         android:id="@+id/buttonGoToRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:text="Go to Register"
+        android:text="ユーザー登録＆ログイン"
         app:layout_constraintBottom_toTopOf="@+id/buttonLogout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/score"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <!-- RecyclerViewアクティビティへの遷移ボタン -->
 
     <Button
         android:id="@+id/buttonLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="634dp"
-        android:layout_marginBottom="49dp"
-        android:text="Logout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="220dp"
+        android:text="ログアウト"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintStart_toEndOf="@+id/buttonGoToRegister" />
 
-    <!-- RecyclerViewアクティビティへの遷移ボタン -->
     <Button
         android:id="@+id/button_go_to_recyclerview"
         android:layout_width="wrap_content"
@@ -78,13 +63,27 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="508dp"
         android:layout_marginBottom="175dp"
-        android:text="Go to Recycle View"
+        android:text="みんなの投稿"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="204dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonGoToRegister"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

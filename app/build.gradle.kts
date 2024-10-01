@@ -41,6 +41,7 @@ android {
 
 dependencies {
     // Glideの依存関係を追加
+    implementation ("androidx.core:core-ktx:1.6.0")  // core-ktxが最新であることを確認
     implementation ("com.github.bumptech.glide:glide:4.11.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.11.0")
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))

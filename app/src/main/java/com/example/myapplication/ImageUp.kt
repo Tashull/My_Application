@@ -92,7 +92,7 @@ class ImageUp : AppCompatActivity() {
     private fun uploadImageToFirebase() {
         if (imageUri != null) {
             val storageReference: StorageReference = FirebaseStorage.getInstance().reference
-            val fileReference: StorageReference = storageReference.child("images/${UUID.randomUUID()}.jpg")
+            val fileReference: StorageReference = storageReference.child("test_images/${UUID.randomUUID()}.jpg")
 
             fileReference.putFile(imageUri!!)
                 .addOnSuccessListener {
